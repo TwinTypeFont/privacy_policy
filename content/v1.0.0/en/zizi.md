@@ -63,14 +63,18 @@ This Service is not directed to children under the age of 13. If we discover tha
 2.  **Final Interpretation**: The Company possesses the right of final interpretation regarding the terms of this Privacy Policy.
 3.  **Language Version**: The Traditional Chinese version of this Privacy Policy shall prevail. In the event of conflicting or inconsistent translations in other languages and the Traditional Chinese version, the Traditional Chinese version shall prevail.
 
-## IX. Contact Us
+## IX. Data Deletion
+
+If you have created an account and wish to delete it, please contact [hello@twintype.co](mailto:hello@twintype.co) with your account details. We will contact you to request relevant supporting documents to verify your identity.
+
+## X. Contact Us
 
 If you have any questions about this Privacy Policy, please contact us:
 
 *   TwinType Foundry LLC
 *   **Email**: [hello@twintype.co](mailto:hello@twintype.co)
 
-## X. Other FAQ
+## XI. Other FAQ
 
 <dl class="faq-list">
   <dt>Will the fonts I load myself be uploaded?</dt>
