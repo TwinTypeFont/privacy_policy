@@ -1,3 +1,3 @@
 # TwinType Privacy Policy
 
-<https://privacy-olicy.twintype.co/>
+<https://privacy-policy.twintype.co/>

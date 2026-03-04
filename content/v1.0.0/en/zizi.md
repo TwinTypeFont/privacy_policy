@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy for ZiZi and Related Applications
-order: 1
+order: 2
 slug: zizi
 ---
 

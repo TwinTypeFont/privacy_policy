@@ -2,13 +2,15 @@
   "en": {
     "v1.0.0": {
       "index": "index.html",
-      "zizi": "01-zizi.html"
+      "mainWebsite": "01-mainWebsite.html",
+      "zizi": "02-zizi.html"
     }
   },
   "zh-TW": {
     "v1.0.0": {
       "index": "index.html",
-      "zizi": "01-zizi.html"
+      "mainWebsite": "01-mainWebsite.html",
+      "zizi": "02-zizi.html"
     }
   }
 }

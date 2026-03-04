@@ -1,5 +1,5 @@
 ---
-title: TwinType相關隱私政策說明
+title: 宗旨
 order: 0
 slug: index
 ---
