@@ -1,6 +1,6 @@
 ---
 title: TwinType 網頁隱私政策
-order: 1
+order: 2
 slug: mainWebsite
 ---
 

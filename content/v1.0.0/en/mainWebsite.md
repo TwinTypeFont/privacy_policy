@@ -1,6 +1,6 @@
 ---
 title: TwinType Website
-order: 1
+order: 2
 slug: mainWebsite
 ---
 

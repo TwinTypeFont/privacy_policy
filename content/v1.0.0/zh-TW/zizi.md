@@ -1,6 +1,6 @@
 ---
 title: ZiZi與相關應用隱私政策
-order: 2
+order: 1
 slug: zizi
 ---
 
