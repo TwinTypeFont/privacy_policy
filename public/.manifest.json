@@ -3,7 +3,8 @@
     "v1.0.0": {
       "index": "index.html",
       "zizi": "01-zizi.html",
-      "mainWebsite": "02-mainWebsite.html"
+      "mainWebsite": "02-mainWebsite.html",
+      "twintype-cloud-ios": "03-twintype-cloud-ios.html"
     }
   },
   "zh-TW": {
@@ -11,7 +12,8 @@
       "index": "index.html",
       "zizi": "01-zizi.html",
       "mainWebsite": "02-mainWebsite.html",
-      "fontLicense": "03-fontLicense.html"
+      "fontLicense": "03-fontLicense.html",
+      "twintype-cloud-ios": "04-twintype-cloud-ios.html"
     }
   }
 }
