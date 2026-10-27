@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://archive.twintype.co/en/v1.0.0/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/en/v1.0.0/01-zizi.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/01-zizi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/01-zizi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/01-zizi.html"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/en/v1.0.0/02-mainWebsite.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/02-mainWebsite.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/02-mainWebsite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/02-mainWebsite.html"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/en/v1.0.0/03-twintype-cloud-ios.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/03-twintype-cloud-ios.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/zh-TW/v1.0.0/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/zh-TW/v1.0.0/01-zizi.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/01-zizi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/01-zizi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/01-zizi.html"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/zh-TW/v1.0.0/02-mainWebsite.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/02-mainWebsite.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/02-mainWebsite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/02-mainWebsite.html"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/zh-TW/v1.0.0/03-fontLicense.html</loc>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/03-twintype-cloud-ios.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html"/>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/zh-TW/v1.0.0/05-egg-bossy-emoji.html</loc>
+  </url>
+  <url>
+    <loc>https://archive.twintype.co/zh-TW/v1.0.0/06-showa-kissa-perpetual.html</loc>
+  </url>
+</urlset>

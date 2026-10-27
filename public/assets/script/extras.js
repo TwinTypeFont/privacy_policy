@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
           copyButton.innerText = 'content_copy';
         }, 2000);
       }).catch(err => {
-        console.error('複製失敗:', err);
+        console.error('Copy failed:', err);
       });
     });
   });
@@ -67,49 +67,92 @@ document.addEventListener("DOMContentLoaded", function () {
       dialog.showModal();
     });
   });
+});
 
-  const resizer = document.getElementById('sidebarResizer');
-  if (resizer) {
-    const root = document.documentElement;
-    let isResizing = false;
+// Sidebar width: drag the handle, arrow keys to adjust, double-click to reset.
+(function () {
+  const KEY = 'eliza.sidebarWidth';
+  const root = document.documentElement;
+  const MIN = 160;
+  const maxWidth = () => Math.round(window.innerWidth * 0.5);
+  const clamp = (w) => Math.min(Math.max(w, MIN), maxWidth());
 
-    resizer.addEventListener('mousedown', (e) => {
-      // Only allow resizing on desktop (when resizer is visible)
-      if (window.getComputedStyle(resizer).display === 'none') return;
-      
-      isResizing = true;
-      document.body.style.cursor = 'col-resize';
-      resizer.classList.add('resizing');
+  function apply(w, save) {
+    root.style.setProperty('--sidebar-width', w + 'px');
+    if (save) {
+      try { localStorage.setItem(KEY, String(w)); } catch (e) {}
+    }
+  }
+
+  function reset() {
+    root.style.removeProperty('--sidebar-width');
+    try { localStorage.removeItem(KEY); } catch (e) {}
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const sidebar = document.getElementById('sidebarBox');
+    const handle = document.getElementById('sidebarResizer');
+    if (!sidebar || !handle) return;
+
+    const current = () => sidebar.getBoundingClientRect().width;
+
+    handle.addEventListener('pointerdown', function (e) {
+      e.preventDefault();
+      handle.setPointerCapture(e.pointerId);
+      handle.classList.add('dragging');
+      document.body.classList.add('sidebar-resizing');
+    });
+    handle.addEventListener('pointermove', function (e) {
+      if (!handle.hasPointerCapture(e.pointerId)) return;
+      apply(clamp(e.clientX), false);
+    });
+    function end(e) {
+      if (!handle.hasPointerCapture(e.pointerId)) return;
+      handle.releasePointerCapture(e.pointerId);
+      handle.classList.remove('dragging');
+      document.body.classList.remove('sidebar-resizing');
+      apply(Math.round(current()), true);
+    }
+    handle.addEventListener('pointerup', end);
+    handle.addEventListener('pointercancel', end);
+    handle.addEventListener('dblclick', reset);
+    handle.addEventListener('keydown', function (e) {
+      const step = e.shiftKey ? 48 : 16;
+      if (e.key === 'ArrowLeft') apply(clamp(current() - step), true);
+      else if (e.key === 'ArrowRight') apply(clamp(current() + step), true);
+      else return;
       e.preventDefault();
     });
 
-    document.addEventListener('mousemove', (e) => {
-      if (!isResizing) return;
-      const newWidth = (e.clientX / window.innerWidth) * 100;
-      // Limit width between 10% and 50%
-      if (newWidth > 10 && newWidth < 50) {
-        root.style.setProperty('--sidebar-width', newWidth + '%');
-      }
-    });
-
-    document.addEventListener('mouseup', () => {
-      if (isResizing) {
-        isResizing = false;
-        document.body.style.cursor = '';
-        resizer.classList.remove('resizing');
-      }
-    });
-  }
-
-  // DL DT DD Accordion
-  const dts = document.querySelectorAll('dt');
-  dts.forEach(dt => {
-    dt.addEventListener('click', () => {
-      const dd = dt.nextElementSibling;
-      if (dd && dd.tagName === 'DD') {
-        dt.classList.toggle('active');
-        dd.classList.toggle('active');
-      }
+    window.addEventListener('resize', function () {
+      if (root.style.getPropertyValue('--sidebar-width')) apply(clamp(current()), false);
     });
   });
-});
+})();
+
+(function () {
+  const KEY = 'eliza.theme';
+  const root = document.documentElement;
+  const media = window.matchMedia('(prefers-color-scheme: light)');
+
+  const current = () => root.getAttribute('data-theme') || (media.matches ? 'light' : 'dark');
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const sync = () => {
+      const t = current();
+      if (icon) icon.textContent = t === 'light' ? 'dark_mode' : 'light_mode';
+      btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    };
+    btn.addEventListener('click', function () {
+      const next = current() === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+      sync();
+    });
+    media.addEventListener('change', sync);
+    sync();
+  });
+})();

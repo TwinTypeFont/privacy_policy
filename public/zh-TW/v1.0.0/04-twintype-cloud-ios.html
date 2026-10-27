@@ -3,37 +3,41 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>TwinType Cloud iOS</title>
-  <link rel="stylesheet" href="/assets/style/style.css?v=1779676796">
+  <meta name="color-scheme" content="dark light">
+  <title>TwinType Cloud iOS | TwinType Archive</title>
+  <meta name="description" content="最後更新：2026 年 5 月 8 日">
+  <link rel="canonical" href="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html">
+  <link rel="alternate" hreflang="en" href="https://archive.twintype.co/en/v1.0.0/03-twintype-cloud-ios.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html">
+  <link rel="alternate" hreflang="x-default" href="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="TwinType Cloud iOS">
+  <meta property="og:description" content="最後更新：2026 年 5 月 8 日">
+  <meta property="og:url" content="https://archive.twintype.co/zh-TW/v1.0.0/04-twintype-cloud-ios.html">
+  <meta property="og:site_name" content="TwinType Archive">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="/assets/style/style.css?v=1793082082">
   <link rel="stylesheet" href="/assets/style/prism-okaidia.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link rel="icon" href="/assets/images/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-  <link rel="canonical" href="./04-twintype-cloud-ios.html">
-  
-    
-    <link rel="alternate" hreflang="en" href="/en/v1.0.0/03-twintype-cloud-ios.html">
-  
-    
-    <link rel="alternate" hreflang="zh-TW" href="/zh-TW/v1.0.0/04-twintype-cloud-ios.html">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet"/>
+  <script>
+  try { var t = localStorage.getItem('eliza.theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  try { var w = localStorage.getItem('eliza.sidebarWidth'); if (w && window.innerWidth > 600) document.documentElement.style.setProperty('--sidebar-width', Math.min(+w, window.innerWidth * 0.5) + 'px'); } catch (e) {}
+  </script>
 </head>
 <body style="  text-autospace: normal;word-break: auto-phrase;">
   <button class="hamburger" id="sidebarToggle" aria-label="Open menu" aria-haspopup="true" aria-controls="sidebarBox" aria-expanded="false">
     <span class="material-symbols-outlined">menu</span>
   </button>
-  <div id="sidebarBackdrop" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:998;"></div>
-    <div id="sidebarResizer"></div>
+  <div id="sidebarBackdrop" style="display:none;position:fixed;inset:0;z-index:998;"></div>
 
-    <aside class="sidebar_box" id="sidebarBox" aria-hidden="true">
+  <aside class="sidebar_box xingothic-tc-w5" id="sidebarBox" aria-hidden="true">
     <a href="https://twintype.co" target="_blank">主網頁 | TwinType Website</a>
   <div>
-  
   <nav class="doc-switchers" aria-label="Language and version switchers">
     
       <ul class="lang-switcher" style="list-style:none;display:flex;gap:4px;padding:0;margin:0;">
@@ -48,7 +52,7 @@
           
           <li class="active" style="margin:0px;">
             
-              <span class="current capsule" style="color:rgba(0, 0, 0, 1);background-color: white;" aria-current="true" >zh-TW</span>
+              <span class="current capsule" aria-current="true">zh-TW</span>
             
           </li>
         
@@ -61,33 +65,36 @@
           
           <li class="active"  style="margin:0px;">
             
-              <span class="current capsule" style="color:rgba(0, 0, 0, 1);background-color: white;" aria-current="true" >v1.0.0</span>
+              <span class="current capsule" aria-current="true">v1.0.0</span>
             
           </li>
         
       </ul>
     
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"><span class="material-symbols-outlined" aria-hidden="true">contrast</span></button>
   </nav>
-
   </div>
     <section>
       <div id="sidebar">
         
-          <a href="./index.html">宗旨</a>
+          <a href="/zh-TW/v1.0.0/">宗旨</a>
         
-          <a href="./01-zizi.html">ZiZi與相關應用隱私政策</a>
+          <a href="/zh-TW/v1.0.0/01-zizi.html">ZiZi與相關應用隱私政策</a>
         
-          <a href="./02-mainWebsite.html">TwinType 網頁隱私政策</a>
+          <a href="/zh-TW/v1.0.0/02-mainWebsite.html">TwinType 網頁隱私政策</a>
         
-          <a href="./03-fontLicense.html">TwinType 數位字型軟體服務條款暨授權合約（v1.0）</a>
+          <a href="/zh-TW/v1.0.0/03-fontLicense.html">TwinType 數位字型軟體服務條款暨授權合約（v1.0）</a>
         
-          <a href="./04-twintype-cloud-ios.html">TwinType Cloud iOS</a>
+          <a href="/zh-TW/v1.0.0/04-twintype-cloud-ios.html">TwinType Cloud iOS</a>
         
-          <a href="./05-egg-bossy-emoji.html">egg-bossy-emoji</a>
+          <a href="/zh-TW/v1.0.0/05-egg-bossy-emoji.html">egg-bossy-emoji</a>
+        
+          <a href="/zh-TW/v1.0.0/06-showa-kissa-perpetual.html">TwinType 買斷授權條款（昭和喫茶體）v1.1</a>
         
       </div>
     </section>
   </aside>
+  <div class="sidebar-resizer" id="sidebarResizer" role="separator" aria-orientation="vertical" aria-label="Resize sidebar" tabindex="0" title="Drag to resize, double-click to reset"></div>
 
   <main id="content">
 
@@ -279,34 +286,15 @@
   </main>
 
   <!-- Prism JS -->
-    <script src="https://unpkg.com/prismjs/prism.js"></script>
-    <script src="https://unpkg.com/prismjs/components/prism-ruby.min.js"></script>
-    <script src="https://unpkg.com/prismjs/components/prism-javascript.min.js"></script>
-    <script src="https://unpkg.com/prismjs/components/prism-python.min.js"></script>
-    <script src="https://unpkg.com/prismjs/components/prism-markdown.min.js"></script>
-    <script src="https://unpkg.com/prismjs/components/prism-bash.min.js"></script>
-    <script src="https://unpkg.com/prismjs/components/prism-dart.min.js"></script>
-    <script src="https://unpkg.com/prismjs/components/prism-yaml.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-ruby.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markdown.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js" defer></script>
 
-  
-    <script src="/assets/script/extras.js?v=1779676796"></script>
-  <script>
-  (function liveReload(){
-    var last=null;
-    function tick(){
-      fetch('/.stamp',{cache:'no-store'}).then(function(r){
-        if(!r.ok) return;
-        return r.text();
-      }).then(function(txt){
-        if(typeof txt!=='string') return;
-        if(last && last!==txt) location.reload();
-        last = txt;
-      }).catch(function(){});
-      setTimeout(tick,1000);
-    }
-    tick();
-  })();
-  </script>
+    <script src="/assets/script/extras.js?v=1793082082" defer></script>
+
 
 
   <script>
@@ -376,15 +364,6 @@
       if(dx < -60 && dy < 40){ closeSidebar(); }
     }, {passive:true});
   })();
-  </script>
-  <script>
-workbox.routing.registerRoute(
-  ({request}) => request.destination === 'video',
-  new workbox.strategies.CacheFirst({
-    plugins: [new workbox.rangeRequests.Plugin()],
-    cacheName: 'videos',
-  })
-);
   </script>
 </body>
 </html>

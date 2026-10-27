@@ -1,1 +1,4 @@
-我們一起學貓叫
+User-agent: *
+Allow: /
+
+Sitemap: https://archive.twintype.co/sitemap.xml
