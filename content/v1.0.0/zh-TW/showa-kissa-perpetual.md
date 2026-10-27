@@ -4,6 +4,8 @@ order: 10000
 slug: showa-kissa-perpetual
 ---
 
+<div class="tips-info"><p lang="en">This license is provided in Chinese only. If you need an English version, please contact us at <a href="mailto:hello@twintype.co">hello@twintype.co</a>.</p></div>
+
 TwinType 買斷授權條款（昭和喫茶體）
 
 版本：v1.1（買斷）
